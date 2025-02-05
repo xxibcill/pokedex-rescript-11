@@ -6,11 +6,11 @@
   },
   "bs-dependencies": [
     "@rescript/react",
-    "@rescript/core"
+    "@rescript/core",
+    "@glennsl/rescript-fetch",
+    "@glennsl/rescript-json-combinators"
   ],
-  "bsc-flags": [
-    "-open RescriptCore"
-  ],
+  "bsc-flags": ["-open RescriptCore", "-open JsonCombinators"],
   "sources": [
     {
       "dir": "src",

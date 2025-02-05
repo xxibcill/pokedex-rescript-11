@@ -1,7 +1,7 @@
-import ExamplesRes from "src/Examples.res.mjs";
+import PokemonDetailsRes from 'src/pages/PokemonDetails.res.mjs'
 
 // This can be re-exported as is (no Fast-Refresh issues)
-export { getServerSideProps } from "src/Examples.res.mjs";
+export { getServerSideProps } from 'src/pages/PokemonDetails.res.mjs'
 
 // Note:
 // We need to wrap the make call with
@@ -10,6 +10,6 @@ export { getServerSideProps } from "src/Examples.res.mjs";
 //
 // If you don't do this, your Fast-Refresh will
 // not work!
-export default function Examples(props) {
-  return <ExamplesRes {...props}/>;
+export default function PokemonDetails(props) {
+  return <PokemonDetailsRes {...props} />
 }
